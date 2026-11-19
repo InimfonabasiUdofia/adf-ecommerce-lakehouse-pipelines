@@ -1,0 +1,16 @@
+{
+	"name": "ecormmercefactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8f16d0fa-0208-49b3-b609-07aa142a9270",
+		"tenantId": "44fe244e-5d8d-414a-b7b0-62c16f384a21"
+	}
+}
