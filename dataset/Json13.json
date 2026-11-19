@@ -1,0 +1,23 @@
+{
+	"name": "Json13",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "{item().destination}.json\n",
+					"type": "Expression"
+				},
+				"folderPath": "cdc",
+				"fileSystem": "details"
+			}
+		},
+		"schema": {}
+	}
+}

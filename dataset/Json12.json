@@ -1,0 +1,39 @@
+{
+	"name": "Json12",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "lookup.json",
+				"folderPath": "lookup",
+				"fileSystem": "details"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"destination": {
+					"type": "string"
+				},
+				"schema": {
+					"type": "string"
+				},
+				"table_name": {
+					"type": "string"
+				},
+				"cdc_col": {
+					"type": "string"
+				},
+				"from_date": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
